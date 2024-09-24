@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- bean definitions here -->
+	<bean id="obj" class="com.sim.AirtelSim"></bean>    
+<!--  		<bean id="obj" class="com.sim.IdeaSim"></bean>		-->
+<!--        <bean id="obj" class="com.sim.RelianceSim"></bean>		-->
+      
+      
+<!--       <bean id="sim1" class="com.sim.AirtelSim"></bean>
+      <bean id="sim2" class="com.sim.IdeaSim"></bean>		-->
+</beans>

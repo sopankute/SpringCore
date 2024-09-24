@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- bean definitions here -->
+<!-- <bean id="s1" class="com.model.Student">
+		<property name="sid" value="100"/>
+		<property name="sname" value="Sopan"/>
+		<property name="scity" value="Pune"/>
+		<property name="spercentage" value="73"/>
+	</bean>    -->
+	
+<!-- 	<bean id="obj" class="com.model.Student">
+		<constructor-arg type="int" value="100"/>
+		<constructor-arg type="String" value="Sopan"/>
+		<constructor-arg type="String" value="Pune"/>
+		<constructor-arg type="double" value="73"/>
+	</bean>	-->
+	
+	 <bean id="s1" class="com.model.Student">
+		<property name="sid" value="100"/>
+		<property name="sname" value="Sopan"/>
+		<property name="scity" value="Pune"/>
+		<property name="spercentage" value="73"/>
+		<property name="address">
+		<list><ref bean="a1"/><ref bean="a2"/><ref bean="a3"/></list>
+		</property>
+	</bean>    
+	<bean id="a1" class="com.model.Address">
+		<property name="aid" value="102"/>
+		<property name="streat" value="Mumbai Highway"/>
+		<property name="state" value="Maharastra"/>
+	</bean>
+	<bean id="a2" class="com.model.Address">
+		<property name="aid" value="103"/>
+		<property name="streat" value="Nagar Highway"/>
+		<property name="state" value="Maharastra"/>
+	</bean>
+	<bean id="a3" class="com.model.Address">
+		<property name="aid" value="104"/>
+		<property name="streat" value="Nagpur Highway"/>
+		<property name="state" value="Maharastra"/>
+	</bean>
+</beans>
